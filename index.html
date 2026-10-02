@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-
+scale=1.0"
+    />
+
+    <title>Cadastro - Curso de Enfermagem</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Curso de Enfermagem</h1>
+        <p class="subtitle">Cadastro de Aluno</p>
+        <form id="formCadastro">
+          <div class="input-group">
+            <label>Nome completo</label>
+            <input type="text" id="nome" />
+          </div>
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="email" />
+          </div>
+          <div class="input-group">
+            <label>CPF</label>
+            <input type="text" id="cpf" placeholder="000.000.000-00" />
+          </div>
+          <div class="input-group">
+            <label>Senha</label>
+            <input type="password" id="senha" />
+          </div>
+          <div class="input-group">
+            <label>Confirmar Senha</label>
+            <input type="password" id="confirmar" />
+          </div>
+          <button type="button" onclick="cadastrar()">Cadastrar</button>
+          <p id="mensagem"></p>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
